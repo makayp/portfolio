@@ -1,0 +1,24 @@
+img {
+  width: 20px;
+}
+
+/* section {
+  height: 500px;
+  width: 100%;
+}
+
+:root {
+  scroll-snap-type: y mandatory;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header,
+#about,
+#contact,
+#projects,
+#hero {
+  scroll-snap-align: start;
+} */
