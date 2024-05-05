@@ -1,5 +1,5 @@
 function Logo() {
-  return <h1>Emmanuel</h1>;
+  return <h1 className='logo'>cre8ive</h1>;
   //   <img src='/logo.png' alt='logo' />;
 }
 

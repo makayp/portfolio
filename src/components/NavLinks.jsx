@@ -1,27 +1,38 @@
+import { useState } from "react";
+
 function NavLinks() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const themeIcon = isDarkMode ? "sun" : "moon";
+
+  function handleClick() {
+    setIsDarkMode(curr => !curr);
+    document.body.classList.toggle("dark-theme");
+  }
+
   return (
     <ul className='nav-links'>
       <li className='nav-item'>
         <a href='#hero'>Home</a>
       </li>
       <li className='nav-item'>
-        <a className='nav-item' href='#about'>
-          About
-        </a>
+        <a href='#about'>About</a>
       </li>
       <li className='nav-item'>
-        <a className='nav-item' href='#projects'>
-          Projects
-        </a>
+        <a href='#projects'>Projects</a>
       </li>
       <li className='nav-item'>
-        <a className='nav-item' href='#contact'>
-          Contact
-        </a>
+        <a href='#contact'>Contact</a>
       </li>
 
       <li className='nav-item'>
-        <img src='/moon-regular.svg' width={30} alt='moon/star' />
+        <img
+          className='theme-btn'
+          src={`/${themeIcon}.svg`}
+          width={30}
+          alt={"moon/star"}
+          onClick={handleClick}
+        />
       </li>
     </ul>
   );
