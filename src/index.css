@@ -21,6 +21,7 @@
 
 html {
   font-family: "Comic Neue", cursive;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -45,15 +46,13 @@ ul {
 button {
   color: var(--secondary);
   background: none;
-  border: 1px solid var(--secondary);
+  border: 2px solid var(--secondary);
   cursor: pointer;
   display: flex;
   padding: 5px 0px 5px 5px;
   margin-top: 20px;
-}
-
-img {
-  width: 20px;
+  border-radius: 5px;
+  font-weight: 400;
 }
 
 #header {
@@ -76,6 +75,10 @@ h1 {
   align-items: center;
   margin-left: auto;
   min-height: 50px;
+}
+
+.nav-links img {
+  width: 20px;
 }
 
 .nav-item {
@@ -133,9 +136,13 @@ h1 {
   transform: translateY(-9px) rotate(-45deg);
 }
 
-#hero {
+section {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+#hero {
   height: calc(100vh - 67px);
   background-color: var(--accent-background);
 }
@@ -154,9 +161,6 @@ h1 {
   display: grid;
   grid-template-columns: 5fr 3fr;
   align-items: center;
-
-  /* grid-template-columns: 1fr 1fr; */
-  /* align-items: center; */
 }
 
 .skills {
@@ -193,6 +197,7 @@ h1 {
 
 .hero-socials img {
   margin-right: 8px;
+  width: 20px;
 }
 
 .hero-btn {
@@ -219,4 +224,88 @@ button span {
 button:hover span {
   margin-left: 15px;
   transition: 0.3s ease-in-out;
+}
+
+#about {
+  padding: 50px 30px;
+}
+
+#about > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  max-width: 1200px;
+}
+
+.about-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 400px;
+}
+
+.about-details h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.about-details h2::after {
+  content: "";
+  width: 40%;
+  display: block;
+  border-bottom: 4px solid var(--accent-color);
+}
+
+.about-details {
+  padding: 0 60px;
+  align-items: start;
+  text-align: left;
+}
+
+.about-details p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  max-width: 500px;
+}
+
+.about-button {
+  width: 100px;
+}
+
+footer {
+  background-color: #1e1e1e;
+  text-align: center;
+  padding: 40px 10px;
+}
+
+footer p {
+  font-size: 20px;
+  color: #fff;
+}
+
+#contact {
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: 1200px;
+}
+
+.connect {
+  display: flex;
+  flex-direction: column;
+  align-items: sta;
+}
+
+.socials img {
+  width: 20px;
 }

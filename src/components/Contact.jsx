@@ -3,9 +3,11 @@ import Socials from "./Socials";
 
 function Contact() {
   return (
-    <section>
-      <Connect />
-      <Socials />
+    <section id='contact'>
+      <div>
+        <Connect />
+        <Socials />
+      </div>
     </section>
   );
 }
