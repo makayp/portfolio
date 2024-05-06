@@ -26,9 +26,11 @@ function Hero() {
               <img src='/linkedin-in.svg' alt='linkedin' />
               <img src='/github.svg' alt='github' />
             </div>
-            <Button type={"hero-btn"} suffix={"→"}>
-              View Projects
-            </Button>
+            <a href='#projects'>
+              <Button type={"hero-btn"} suffix={"→"}>
+                View Projects
+              </Button>
+            </a>
           </div>
           <div className='image-container'>
             <img className='hero-image' src='/monkey.jpeg' alt='hero image' />

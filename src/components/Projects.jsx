@@ -1,5 +1,3 @@
-import Card from "./Card";
-
 const projects = [
   {
     id: 1,
@@ -48,13 +46,13 @@ const projects = [
 function Projects() {
   return (
     <section id='projects'>
-      <h3>Projects</h3>
+      {/* <h3>Projects</h3>
       <p>Check out some of my recent works below.</p>
       <div className='project-list'>
         {projects.map(project => (
           <Card project={project} key={project.id} />
         ))}
-      </div>
+      </div> */}
     </section>
   );
 }

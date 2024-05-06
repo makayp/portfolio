@@ -3,14 +3,16 @@ import Button from "./Button";
 function Connect() {
   return (
     <div className='connect'>
-      <h3>Connect... 👬</h3>
+      <h2>Connect... 👬</h2>
       <p>Feel free to get in touch with me below.</p>
-      <input type='text' />
-      <input type='email' />
-      <textarea cols='30' rows='10'></textarea>
-      <Button type={"form-submit"} suffix={"→"}>
-        Send
-      </Button>
+      <form action=''>
+        <input type='text' placeholder='name' />
+        <input type='email' placeholder='email' />
+        <textarea cols='30' rows='7' placeholder='message'></textarea>
+        <Button type={"form-submit"} suffix={"→"}>
+          Send
+        </Button>
+      </form>
     </div>
   );
 }
